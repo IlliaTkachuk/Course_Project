@@ -33,48 +33,41 @@ public:
 class MenuService {
 public:
 	static void printGeneralMenu() {
-		ConsoleService::outputString(menu_constants::generalMenu);
+		ConsoleService::outputString(menu_constants::GENERAL_MENU);
 	}
 
 	static void printFacultyMenu() {
-		ConsoleService::outputString(menu_constants::facultyMenu);
+		ConsoleService::outputString(menu_constants::FACULTY_MENU);
 	}
 
 	static void printFacultyFindMenu() {
-		ConsoleService::outputString(menu_constants::facultyFindMenu);
+		ConsoleService::outputString(menu_constants::FACULTY_FIND_MENU);
 	}
 
 	static void printFacultyUpdateMenu() {
-		ConsoleService::outputString(menu_constants::facultyUpdateMenu);
+		ConsoleService::outputString(menu_constants::FACULTY_UPDATE_MENU);
 	}
 
 	static void printGroupMenu() {
-		ConsoleService::outputString(menu_constants::groupMenu);
+		ConsoleService::outputString(menu_constants::GROUP_MENU);
 	}
 
 	static void printGroupFindMenu() {
-		ConsoleService::outputString(menu_constants::groupFindMenu);
+		ConsoleService::outputString(menu_constants::GROUP_FIND_MENU);
 	}
 
 	static void printGroupUpdateMenu() {
-		ConsoleService::outputString(menu_constants::groupUpdateMenu);
+		ConsoleService::outputString(menu_constants::GROUP_UPDATE_MENU);
 	}
 };
 
 int main() {
-
 	MenuService::printGeneralMenu();
-	cout << "\n\n\n";
 	MenuService::printFacultyMenu();
-	cout << "\n\n\n";
 	MenuService::printFacultyFindMenu();
-	cout << "\n\n\n"; 
 	MenuService::printFacultyUpdateMenu();
-	cout << "\n\n\n";
 	MenuService::printGroupMenu();
-	cout << "\n\n\n";
 	MenuService::printGroupFindMenu();
-	cout << "\n\n\n"; 
 	MenuService::printGroupUpdateMenu();
 
 	system("pause");

@@ -20,9 +20,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="MENU_CONSTANTS.h">
       <Filter>Source Files</Filter>
     </ClInclude>
