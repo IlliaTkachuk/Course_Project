@@ -20,18 +20,11 @@ public:
 	}
 
 	void outputString(string input) {
-		cout << input + "\n";
+		cout << input;
+		cout << "\n";
 	}
 
 	void clearConsole() {
-		int seconds = 10;
-		cout << "\nClosing in: ";
-		while (seconds != 0) {
-			cout << seconds;
-			Sleep(1000);
-			seconds--;
-			cout << "\b";
-		}
 		system("cls");
 	}
 
@@ -40,8 +33,6 @@ public:
 int main() {
 
 	ConsoleService service;
-	
-	
 	int intResult = service.inputInt();
 	string stringResult = service.inputString();
 	cout << "OutputString: ";
@@ -52,14 +43,3 @@ int main() {
 	system("pause");
 	return 0;
 }
-
-
-/*
-faculty crud
-	sorting
-
-	group crud
-		sorting
-		starosta
-		student
-*/
