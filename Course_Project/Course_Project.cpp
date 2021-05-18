@@ -1,91 +1,81 @@
 ﻿#include <iostream>
 #include <string>
 #include <windows.h>
+#include "MENU_CONSTANTS.h"
 
 using namespace std;
 
 class ConsoleService {
 
 public:
-	string inputString() {
+	static string inputString() {
 		string input;
 		cin >> input;
 		return input;
 	}
 
-	int inputInt() {
+	static int inputInt() {
 		int input;
 		cin >> input;
 		return input;
 	}
 
-	void outputString(string input) {
+	static void outputString(string input) {
 		cout << input;
 	}
 
-	void clearConsole() {
+	static void clearConsole() {
 		system("cls");
 	}
 
 };
 
 class MenuService {
-private:
-	string menu1 = "1.Manage faculties\n2.Manage student groups\n";
-	string menu2 = "1.Create faculty\n2.Find all faculties\n3.Find faculty\n4.Update faculty\n5.Delete faculty\n";
-	string menu3 = "1.Find faculty by name\n2.Find faculty by id\n";
-	string menu4 = "1.Change faculty name\n2.Assign dean\n3.Add group\n4.Delete group\n";
-	string menu5 = "1.Create group\n2.Find all groups\n3.Find group\n4.Update group\n5.Delete group\n";
-	string menu6 = "1.Find group by name\n2.Find group by id\n";
-	string menu7 = "1.Change group name\n2.Assign headman\n3.Add student\n4.Delete student\n";
-	
 public:
-	void printMenu1() {
-		cout << menu1;
+	static void printGeneralMenu() {
+		ConsoleService::outputString(menu_constants::generalMenu);
 	}
 
-	void printMenu2() {
-		cout << menu2;
+	static void printFacultyMenu() {
+		ConsoleService::outputString(menu_constants::facultyMenu);
 	}
 
-	void printMenu3() {
-		cout << menu3;
+	static void printFacultyFindMenu() {
+		ConsoleService::outputString(menu_constants::facultyFindMenu);
 	}
 
-	void printMenu4() {
-		cout << menu4;
+	static void printFacultyUpdateMenu() {
+		ConsoleService::outputString(menu_constants::facultyUpdateMenu);
 	}
 
-	void printMenu5() {
-		cout << menu5;
+	static void printGroupMenu() {
+		ConsoleService::outputString(menu_constants::groupMenu);
 	}
 
-	void printMenu6() {
-		cout << menu6;
+	static void printGroupFindMenu() {
+		ConsoleService::outputString(menu_constants::groupFindMenu);
 	}
 
-	void printMenu7() {
-		cout << menu7;
+	static void printGroupUpdateMenu() {
+		ConsoleService::outputString(menu_constants::groupUpdateMenu);
 	}
 };
 
 int main() {
 
-	ConsoleService consoleService;
-	MenuService menuService;
-	//menuService.printMenu1();
-	//cout << "\n\n\n";
-	//menuService.printMenu2();
-	//cout << "\n\n\n"; 
-	//menuService.printMenu3();
-	//cout << "\n\n\n"; 
-	//menuService.printMenu4();
-	//cout << "\n\n\n"; 
-	//menuService.printMenu5();
-	//cout << "\n\n\n"; 
-	//menuService.printMenu6();
-	//cout << "\n\n\n"; 
-	//menuService.printMenu7();
+	MenuService::printGeneralMenu();
+	cout << "\n\n\n";
+	MenuService::printFacultyMenu();
+	cout << "\n\n\n";
+	MenuService::printFacultyFindMenu();
+	cout << "\n\n\n"; 
+	MenuService::printFacultyUpdateMenu();
+	cout << "\n\n\n";
+	MenuService::printGroupMenu();
+	cout << "\n\n\n";
+	MenuService::printGroupFindMenu();
+	cout << "\n\n\n"; 
+	MenuService::printGroupUpdateMenu();
 
 	system("pause");
 	return 0;
