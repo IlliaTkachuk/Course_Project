@@ -1,20 +1,40 @@
 ﻿#include <iostream>
 #include <string>
+#include <vector>
 #include <windows.h>
 #include "MENU_CONSTANTS.h"
 
 using namespace std;
 
+
 class Student {
-private:
 	string firstName;
 	string lastName;
-	Group group;
+	int groupId;
 	double gpa;
-	// dateOfBirth;
+	//Date birthDate;
 	string phoneNumber;
 };
 
+class Group {
+	string name;
+	Faculty faculty;
+	int studyYear;
+	vector<Student> students;
+	Student headman;
+};
+
+class Faculty {
+	string name;
+	vector<Group> groups;
+};
+
+class University {
+	string name;
+	vector<Faculty> faculties;
+};
+
+  
 class ConsoleService {
 
 public:
