@@ -33,7 +33,7 @@ class University {
 	vector<Faculty> faculties;
 };
 
-
+  
 class ConsoleService {
 
 public:
