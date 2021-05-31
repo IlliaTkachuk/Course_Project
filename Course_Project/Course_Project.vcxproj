@@ -139,10 +139,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Project_Entities.cpp" />
+    <ClCompile Include="ConsoleService.cpp" />
+    <ClCompile Include="Faculty.cpp" />
+    <ClCompile Include="Group.cpp" />
+    <ClCompile Include="MenuService.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Student.cpp" />
+    <ClCompile Include="University.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MENU_CONSTANTS.h" />
+    <ClInclude Include="ConsoleService.h" />
+    <ClInclude Include="Faculty.h" />
+    <ClInclude Include="Group.h" />
+    <ClInclude Include="MenuService.h" />
+    <ClInclude Include="Menu_Constants.h" />
+    <ClInclude Include="Student.h" />
+    <ClInclude Include="University.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
