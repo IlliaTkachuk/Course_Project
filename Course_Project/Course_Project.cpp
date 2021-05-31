@@ -7,7 +7,6 @@
 using namespace std;
 
 
-
 class Student {
 	string firstName;
 	string lastName;
@@ -35,7 +34,7 @@ class University {
 	vector<Faculty> faculties;
 };
 
-
+  
 class ConsoleService {
 
 public:
