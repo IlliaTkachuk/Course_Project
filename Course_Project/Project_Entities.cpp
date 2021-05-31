@@ -6,8 +6,6 @@
 
 using namespace std;
 
-
-
 class Student {
 	string firstName;
 	string lastName;
