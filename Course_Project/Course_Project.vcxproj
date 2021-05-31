@@ -140,7 +140,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ConsoleService.cpp" />
-    <ClCompile Include="Faculty.cpp" />
+    <ClCompile Include="Faculty.cpp">
+      <LanguageStandard Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</LanguageStandard>
+      <LanguageStandard_C Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</LanguageStandard_C>
+    </ClCompile>
     <ClCompile Include="Group.cpp" />
     <ClCompile Include="MenuService.cpp" />
     <ClCompile Include="Main.cpp" />

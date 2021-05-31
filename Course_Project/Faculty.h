@@ -9,10 +9,11 @@ using namespace std;
 class Faculty {
 private:
 	string name;
+	int facultyId;
 	vector<Group> groups;
 
 public:
-	Faculty(string name, vector<Group> groups);
+	Faculty(string name, int facultyId, vector<Group> groups);
 };
 
 #endif
