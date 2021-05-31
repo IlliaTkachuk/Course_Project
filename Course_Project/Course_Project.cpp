@@ -15,8 +15,6 @@ private:
 	string phoneNumber;
 };
 
-
-
 class ConsoleService {
 
 public:
