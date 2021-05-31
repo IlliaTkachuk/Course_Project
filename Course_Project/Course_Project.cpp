@@ -5,6 +5,18 @@
 
 using namespace std;
 
+class Student {
+private:
+	string firstName;
+	string lastName;
+	Group group;
+	double gpa;
+	// dateOfBirth;
+	string phoneNumber;
+};
+
+
+
 class ConsoleService {
 
 public:
