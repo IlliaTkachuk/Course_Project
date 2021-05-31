@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Course_Project.cpp" />
+    <ClCompile Include="Project_Entities.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MENU_CONSTANTS.h" />
