@@ -13,51 +13,96 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Entities">
+      <UniqueIdentifier>{f6875ded-c935-4b13-9dcc-e5e8706f83b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Services">
+      <UniqueIdentifier>{27d28a31-ee8c-4b7b-89fc-d6d56032e6e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Constants">
+      <UniqueIdentifier>{cd0b3c58-dfaa-4695-9da6-a3656fdb9876}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entities">
+      <UniqueIdentifier>{a783bb4e-e2f6-4d88-99ae-e0bd9ce84f2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Services">
+      <UniqueIdentifier>{cb5f7563-829b-4734-9ad9-e23937577ea5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Student.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Group.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Faculty.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Entities</Filter>
     </ClCompile>
     <ClCompile Include="University.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Student.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Group.cpp">
+      <Filter>Source Files\Entities</Filter>
     </ClCompile>
     <ClCompile Include="ConsoleService.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityGenerationService.cpp">
+      <Filter>Source Files\Services</Filter>
     </ClCompile>
     <ClCompile Include="MenuService.cpp">
+      <Filter>Source Files\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="DataInitializer.cpp">
+      <Filter>Source Files\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="FileService.cpp">
+      <Filter>Source Files\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="CaseHandler.cpp">
+      <Filter>Source Files\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityLists.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Group.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Faculty.h">
+      <Filter>Header Files\Entities</Filter>
     </ClInclude>
     <ClInclude Include="Student.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Faculty.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Menu_Constants.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Entities</Filter>
     </ClInclude>
     <ClInclude Include="University.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Group.h">
+      <Filter>Header Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="DataInitializer.h">
+      <Filter>Header Files\Services</Filter>
     </ClInclude>
     <ClInclude Include="ConsoleService.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityGenerationService.h">
+      <Filter>Header Files\Services</Filter>
     </ClInclude>
     <ClInclude Include="MenuService.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu_Constants.h">
+      <Filter>Header Files\Constants</Filter>
+    </ClInclude>
+    <ClInclude Include="FileService.h">
+      <Filter>Header Files\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="CaseHandler.h">
+      <Filter>Header Files\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities.h">
+      <Filter>Header Files\Constants</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

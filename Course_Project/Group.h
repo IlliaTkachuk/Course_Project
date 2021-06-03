@@ -8,8 +8,8 @@ using namespace std;
 
 class Group {
 private:
-	string name;
 	int groupId;
+	string name;
 	int facultyId;
 	int studyYear;
 	vector<Student> students;				// list vs. vector
