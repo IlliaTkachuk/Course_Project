@@ -59,5 +59,8 @@
     <ClInclude Include="MenuService.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="EntityLists.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

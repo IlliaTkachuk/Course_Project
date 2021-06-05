@@ -88,6 +88,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <CompileAsManaged>false</CompileAsManaged>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <UseStandardPreprocessor>true</UseStandardPreprocessor>
+      <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -102,6 +108,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <CompileAsManaged>false</CompileAsManaged>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <Optimization>Disabled</Optimization>
+      <UseStandardPreprocessor>true</UseStandardPreprocessor>
+      <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -116,6 +129,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <CompileAsManaged>false</CompileAsManaged>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <UseStandardPreprocessor>true</UseStandardPreprocessor>
+      <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -130,6 +149,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <CompileAsManaged>false</CompileAsManaged>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <Optimization>Disabled</Optimization>
+      <UseStandardPreprocessor>true</UseStandardPreprocessor>
+      <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -139,8 +165,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CaseHandler.cpp" />
     <ClCompile Include="ConsoleService.cpp" />
-    <ClCompile Include="Faculty.cpp" />
+    <ClCompile Include="DataInitializer.cpp" />
+    <ClCompile Include="EntityLists.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Faculty.cpp">
+      <LanguageStandard Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</LanguageStandard>
+      <LanguageStandard_C Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</LanguageStandard_C>
+    </ClCompile>
+    <ClCompile Include="EntityGenerationService.cpp" />
+    <ClCompile Include="FileService.cpp" />
     <ClCompile Include="Group.cpp" />
     <ClCompile Include="MenuService.cpp" />
     <ClCompile Include="Main.cpp" />
@@ -148,8 +184,14 @@
     <ClCompile Include="University.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CaseHandler.h" />
     <ClInclude Include="ConsoleService.h" />
+    <ClInclude Include="DataInitializer.h" />
+    <ClInclude Include="Entities.h" />
+    <ClInclude Include="EntityLists.h" />
     <ClInclude Include="Faculty.h" />
+    <ClInclude Include="EntityGenerationService.h" />
+    <ClInclude Include="FileService.h" />
     <ClInclude Include="Group.h" />
     <ClInclude Include="MenuService.h" />
     <ClInclude Include="Menu_Constants.h" />

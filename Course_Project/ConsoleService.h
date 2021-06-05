@@ -3,6 +3,8 @@
 #define CONSOLE_SERVICE_H
 #include <iostream>
 #include <string>
+#include "MENUSERVICE.H"
+
 using namespace std;
 
 class ConsoleService {
