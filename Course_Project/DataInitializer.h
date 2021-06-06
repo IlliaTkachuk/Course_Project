@@ -9,7 +9,7 @@ using namespace std;
 
 class DataInitializer {
 public:
-	static void initializeFacultiesFile(ifstream &fileIn, ofstream &fileOut);
+	static void initializeFacultiesFile(ifstream& fileIn, ofstream& fileOut);
 	static void initializeFaculties();			// Need to parse file data from "Faculties.txt" into the EntityLists::faculties initialization
 
 	static void initializeGroupsFile();

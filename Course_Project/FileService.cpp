@@ -1,6 +1,6 @@
 #include "FileService.h"
 
-string FileService::getLastEntry(ifstream &fileIn) {
+string FileService::getLastEntry(ifstream& fileIn) {
     if (fileIn)                              // если файл открылс€
     {
         string lastLine;
@@ -16,7 +16,7 @@ string FileService::getLastEntry(ifstream &fileIn) {
     return "Could not open the file!";
 }
 
-string FileService::showAllEntries(ifstream &fileIn) {
+string FileService::showAllEntries(ifstream& fileIn) {
     string result = "";
     string currentLine;
     while (getline(fileIn, currentLine)) {         //  ѕока мы получили строку - тело цикла исполн€етс€ ||  когда файл закончилс€ (все строки считались) - цикл false
@@ -28,7 +28,7 @@ string FileService::showAllEntries(ifstream &fileIn) {
     return result + "\n";
 }
 
-string FileService::findById(ifstream &fileIn, int &id) {
+string FileService::findById(ifstream& fileIn, int& id) {
     string result = "";
     string currentLine = "";
     while (getline(fileIn, currentLine)) {
@@ -56,7 +56,7 @@ string FileService::findByName(ifstream& fileIn, string& name) {
     return result + "\n";
 }
 
-string FileService::findEntryByNumber(ifstream& fileIn, int &entryNumber) {
+string FileService::findEntryByNumber(ifstream& fileIn, int& entryNumber) {
     string result = "";
     int currentLine = 0;
     while (getline(fileIn, result) && (currentLine <= entryNumber)) {}
@@ -81,12 +81,12 @@ string FileService::getNameFromLine(string& line) {
     int currentCharacter = 3;
     string resultName = "";
     // Checking for occurence of %d\t\t%c sequence (since id length may vary)
-    while (!(isdigit(line[currentCharacter - 3]) 
+    while (!(isdigit(line[currentCharacter - 3])
         && isspace(line[currentCharacter - 2]) && isspace(line[currentCharacter - 1])
         && isalpha(line[currentCharacter]))) {
         currentCharacter++;
     }
-    
+
     while (isalpha(line[currentCharacter])) {
         resultName += line[currentCharacter];
         currentCharacter++;

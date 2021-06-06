@@ -8,21 +8,21 @@ using namespace std;
 
 class FileService {
 public:
-	static string getLastEntry(ifstream &fileIn);
+	static string getLastEntry(ifstream& fileIn);
 
 	//void readLastLineFromGroups();
 
 	//void readLastLineFromStudents();
 
-	static string showAllEntries(ifstream &fileIn);
+	static string showAllEntries(ifstream& fileIn);
 
-	static string findById(ifstream &fileIn, int &id);
+	static string findById(ifstream& fileIn, int& id);
 
-	static string findByName(ifstream &fileIn, string& name);
+	static string findByName(ifstream& fileIn, string& name);
 
 	static string findEntryByNumber(ifstream& fileIn, int& entryNumber);
 
-	static int getIdFromLine(string &line);
+	static int getIdFromLine(string& line);
 
 	static string getNameFromLine(string& line);
 

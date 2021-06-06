@@ -1,6 +1,6 @@
 #include "FACULTY.H"
 
-Faculty::Faculty(int& facultyId, string &name, list<Group> &groups) {
+Faculty::Faculty(int& facultyId, string& name, list<Group>& groups) {
 	this->name = name;
 	this->facultyId = facultyId;
 	this->groups = groups;

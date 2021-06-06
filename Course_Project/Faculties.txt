@@ -1,3 +1,5 @@
 id		faculty name		groups
-1		fgfgds		-
-2		fdsgsjsj		-
+1		dfgsdfg		-
+2		fdsggsdf		-
+3		dsfgsdfdas		-
+4		1fd		-
