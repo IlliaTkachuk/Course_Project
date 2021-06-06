@@ -8,8 +8,8 @@ using namespace std;
 
 class Faculty {
 private:
-	string name;
 	int facultyId;
+	string name;
 	vector<Group> groups;
 
 public:

@@ -24,5 +24,6 @@ public:
 	static void printGroupUpdateMenu();
 
 	static void wrongKeyTyped();
+
 };
 #endif

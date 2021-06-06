@@ -15,10 +15,6 @@ public:
 	static void outputString(string input);
 
 	static void clearConsole();
-
-	//static bool isInteger(const std::string& s);
-
-	//static void validateInput(int input);
 };
 
 #endif

@@ -1,0 +1,5 @@
+id		faculty name		groups
+1		avast		-
+2		nvidiia		-
+3		wot		-
+4		fgdgd		-
