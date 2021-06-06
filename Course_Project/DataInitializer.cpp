@@ -5,12 +5,12 @@ extern list<Group> groups;
 extern list<Student> students;
 
 // If Faculties.txt does not exist/is empty, creates it and fills the parameters row
-void DataInitializer::initializeFacultiesFile(ifstream& fileIn, ofstream& fileOut) {
-	string buffer;
-	getline(fileIn, buffer);
-	if (buffer == "") {
-		fileOut << "id\t\tfaculty name\t\tgroups\n";
-	}
+void DataInitializer::initializeFacultiesFile(ifstream &fileIn, ofstream &fileOut) {
+		string buffer;
+		getline(fileIn, buffer);
+		if (buffer == "") {
+			fileOut << "id\t\tfaculty name\t\tgroups\n";
+		}
 }
 
 // If Groups.txt does not exist/is empty, creates it and fills the parameters row
@@ -47,7 +47,7 @@ void DataInitializer::initializeFaculties() {
 	ifstream fileIn("Faculties.txt");
 	ofstream fileOut("Faculties.txt", ios::app);
 	DataInitializer::initializeFacultiesFile(fileIn, fileOut);				// Faculties.txt is empty
-
+	
 
 	int currentRow = 1;
 	string currentLine = "";

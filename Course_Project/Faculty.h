@@ -14,7 +14,7 @@ private:
 	list<Group> groups;
 
 public:
-	Faculty(int& facultyId, string& name, list<Group>& groups);
+	Faculty(int &facultyId, string& name, list<Group> &groups);
 
 	int get_faculty_id();
 

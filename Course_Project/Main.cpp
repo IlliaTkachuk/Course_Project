@@ -55,10 +55,10 @@ int main() {
 	DataInitializer::initializeGroupsFile();
 	DataInitializer::initializeStudentsFile();
 
-	for (Faculty faculty : faculties) {
-		faculty.printFaculty();
-	}
-	system("pause");
+	//for (Faculty faculty : faculties) {
+	//	faculty.printFaculty();
+	//}
+	//system("pause");
 
 	string input;
 	//cout << "Use number keys to navigate throgh menus\n\n";
@@ -216,12 +216,12 @@ int main() {
 				break;
 				// 1. Create group2.Find all groups3.Find group4.Update group5.Delete group
 			}
-			/*default:
-				MenuService::wrongKeyTyped();
-				system("pause");
-				break;*/
+		/*default:
+			MenuService::wrongKeyTyped();
+			system("pause");
+			break;*/
 		}
 	}
-	system("pause");
-	return 0;
+		system("pause");
+		return 0;
 }

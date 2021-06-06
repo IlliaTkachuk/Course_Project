@@ -36,21 +36,6 @@
     <ClCompile Include="MenuService.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CaseHandler.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DataInitializer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="EntityLists.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="EntityGenerationService.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="FileService.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Group.h">
@@ -75,21 +60,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="EntityLists.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CaseHandler.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="DataInitializer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="EntityGenerationService.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="FileService.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Entities.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

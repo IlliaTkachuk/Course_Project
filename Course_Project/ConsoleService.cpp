@@ -13,7 +13,6 @@
 	}
 
 	void ConsoleService::outputString(string input) {
-		ConsoleService::clearConsole();
 		cout << input;
 	}
 

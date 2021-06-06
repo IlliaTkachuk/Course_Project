@@ -10,7 +10,7 @@ using namespace std;
 
 class EntityGenerationService {
 public:
-	static void generateNewEntity(ifstream& fileIn, ofstream& fileOut, string& entityName, Entities entity);
+	static void generateNewEntity(ifstream &fileIn, ofstream &fileOut, string &entityName, Entities entity);
 
 private:
 	static int getNewId(ifstream& fileIn);

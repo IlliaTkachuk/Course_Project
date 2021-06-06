@@ -1,6 +1,6 @@
 #include "EntityGenerationService.h"
 
-void EntityGenerationService::generateNewEntity(ifstream& fileIn, ofstream& fileOut, string& entityName, Entities entity) {
+void EntityGenerationService::generateNewEntity(ifstream &fileIn, ofstream &fileOut, string &entityName, Entities entity) {
 	int entityId = getNewId(fileIn);
 
 	switch (entity) {
@@ -19,7 +19,7 @@ void EntityGenerationService::generateNewEntity(ifstream& fileIn, ofstream& file
 	}
 }
 
-int EntityGenerationService::getNewId(ifstream& fileIn) {
+int EntityGenerationService::getNewId(ifstream &fileIn) {
 	int entityId = 0;
 	string lastLine = FileService::getLastEntry(fileIn);
 	if (lastLine._Starts_with("id")) {												// The case when the table is initialized, but empty
@@ -33,6 +33,6 @@ int EntityGenerationService::getNewId(ifstream& fileIn) {
 	}
 	entityId = atoi(idString.c_str());
 	entityId++;
-
+	
 	return entityId;
 }

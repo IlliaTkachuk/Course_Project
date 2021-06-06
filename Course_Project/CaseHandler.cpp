@@ -4,7 +4,7 @@ void CaseHandler::handleCaseFacultyCreate() {
 	ConsoleService::outputString("Insert faculty name:\nAnswer: ");
 	string facultyName;
 	cin >> facultyName;
-
+	
 	ifstream fileIn("Faculties.txt");
 	ofstream fileOut("Faculties.txt", ios::app);
 	EntityGenerationService::generateNewEntity(fileIn, fileOut, facultyName, Entities::FACULTY);
@@ -32,7 +32,7 @@ void CaseHandler::handleCaseFacultyFindById() {
 	cin >> facultyId;
 	string result = FileService::findById(fileIn, facultyId);
 	ConsoleService::outputString(result);
-
+	
 	fileIn.close();
 	system("pause");
 }
